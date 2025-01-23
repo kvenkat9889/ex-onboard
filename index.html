@@ -352,7 +352,7 @@ input[type="checkbox"] {
 <body>
     <div class="container">
         <div class="A">
-            <img src="../Home/Assests/ATS Wallpaper.jpg" alt="Logo">
+            <img src="ATS Wallpaper.jpg" alt="Logo">
             <h1>EMPLOYEE ONBOARDING FORM</h1>
         </div>
         <div id="successMessage" class="success-message">
@@ -655,13 +655,13 @@ function addEducation() {
             </div>
             <div class="form-group">
                 <label class="required">Stream/Specialization</label>
-                <input type="text" name="education[][stream]" required pattern="^[A-Za-z\s]{5,}$">
-                <div class="invalid-feedback">Please enter at least 5 alphabetical characters</div>
+                <input type="text" name="education[][stream]" required>
+                <div class="error-message" id="percentageError"></div>
             </div>
             <div class="form-group">
                 <label class="required">Institution</label>
-                <input type="text" name="education[][institution]" required pattern="^[A-Za-z\s]{5,}$">
-                <div class="invalid-feedback">Please enter at least 5 alphabetical characters</div>
+                <input type="text" name="education[][institution]" required required>
+                <div class="error-message" id="percentageError"></div>
             </div>
             <div class="form-group">
                 <label class="required">Year of Completion</label>
@@ -705,13 +705,13 @@ function addEmployment() {
         <div class="form-grid">
             <div class="form-group">
                 <label class="required">Company Name</label>
-                <input type="text" name="employment[][company]" required pattern="^[A-Za-z\s]{5,}$">
-                <div class="invalid-feedback">Please enter at least 5 alphabetical characters</div>
+                <input type="text" name="employment[][company]" required>
+                <div class="error-message" id="percentageError"></div>
             </div>
             <div class="form-group">
                 <label class="required">Designation</label>
-                <input type="text" name="employment[][designation]" required pattern="^[A-Za-z\s]{5,}$">
-                <div class="invalid-feedback">Please enter at least 5 alphabetical characters</div>
+                <input type="text" name="employment[][designation]" required>
+                <div class="error-message" id="percentageError"></div>
             </div>
             <div class="form-group">
                 <label class="required">Employment Type</label>
